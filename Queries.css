@@ -1,0 +1,116 @@
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  html {
+    font-size: 8px;
+  }
+  .services-container,
+  .menus,
+  .deals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .container {
+    max-width: 90%;
+  }
+  .nav-list {
+    display: none;
+  }
+
+
+  .hero,
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    text-align: center;
+    padding: 0 2.4rem;
+    gap: 1rem;
+  }
+  .heros-content .heros-btn-box,
+  .heros-content .description {
+    justify-content: center;
+  }
+  .heros-content .description {
+    margin: auto;
+    margin-bottom: 1.6rem;
+  }
+  .hero-image-wrapper {
+    display: none;
+  }
+  .cta-grid,
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .box1 {
+    margin-bottom: 5rem;
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 724px) {
+  section {
+    padding: 1rem 0 !important;
+  }
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .hero-content-wrapper h1 {
+    font-size: 3.5rem;
+  }
+
+  .Featured-logos {
+    gap: 2rem;
+  }
+  .featured-logo {
+    width: 10rem;
+  }
+  .deal-content a {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+  .services-container,
+  .menus,
+  .cards-container,
+  .deals-grid,
+  .social-links-box {
+    grid-template-columns: 1fr;
+  }
+  .social-links-box {
+    margin-bottom: 5rem;
+  }
+  .heading-box {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 334px) {
+  .container {
+    max-width: 95%;
+    padding: 2rem;
+  }
+  .heading-box {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .deal-content a {
+    width: 100%;
+  }
+}
