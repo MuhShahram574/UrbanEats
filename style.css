@@ -2,6 +2,10 @@
 /* HEADER SECTION */
 /* /////////////// */
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 header {
   position: fixed;
   left: 0;
@@ -103,7 +107,6 @@ header.scrolled {
   font-size: 3.2rem;
 }
 
-
 .close-icon {
   display: none;
 }
@@ -122,10 +125,9 @@ header.scrolled {
   justify-content: center;
 }
 
-
 .hero {
   width: 130rem;
-  height: 10rem ;
+  height: 10rem;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: center;
@@ -294,6 +296,9 @@ header.scrolled {
   padding: 50px 0;
 }
 
+.service-content .tertory-heading {
+  margin: 0;
+}
 .service-card {
   background-color: #fff;
   border-radius: 10px;
@@ -319,7 +324,6 @@ header.scrolled {
   font-size: 24px;
   color: #007bff;
   transition: all 0.3s ease;
-  margin-bottom: 2rem;
 }
 
 .service-card:hover .icon {
@@ -337,13 +341,18 @@ header.scrolled {
   text-align: left;
   height: fit-content;
   transition: all 0.3s ease;
-  position: relative;
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  justify-content: end;
 }
+
+
 
 .service-content .description {
   font-size: 1.6rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin: 0;
 }
 
 /* /////////////// */
@@ -425,7 +434,7 @@ header.scrolled {
   display: block;
   transition: transform 0.4s ease;
   border-radius: 1.2rem;
-  box-shadow: 0 0 20px 4px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 2;
 }
@@ -881,7 +890,8 @@ header.scrolled {
 
 .contact-form-box input,
 .contact-form-box textarea {
-  width: 100%;
+  /* width: 500px; */
+  resize: none;
   padding: 1.6rem;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1070,7 +1080,6 @@ header.scrolled {
 
 .footer-icons a:hover i {
   color: #0130ee;
-
 }
 
 .box1 .contact {
@@ -1107,7 +1116,6 @@ header.scrolled {
   position: relative;
   font-family: "Poppins", sans-serif;
 }
-
 
 .social-links ul {
   list-style: none;
