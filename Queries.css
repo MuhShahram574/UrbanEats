@@ -14,14 +14,19 @@
   }
 }
 
-@media only screen and (max-width: 889px) {
+@media only screen and (max-width: 971px) {
   .container {
-    max-width: 90%;
+    max-width: 85%;
   }
   .nav-list {
     display: none;
   }
 
+  .mobile-nav-btn {
+    display: block;
+    padding: 0 12px;
+    border-radius: 6px;
+  }
 
   .hero,
   .about-container {
@@ -29,7 +34,7 @@
   }
   .hero {
     text-align: center;
-    padding: 0 2.4rem;
+    padding: 10rem 2.4rem;
     gap: 1rem;
   }
   .heros-content .heros-btn-box,
@@ -40,9 +45,8 @@
     margin: auto;
     margin-bottom: 1.6rem;
   }
-  .hero-image-wrapper {
-    display: none;
-  }
+
+  
   .cta-grid,
   .footer {
     grid-template-columns: 1fr;
