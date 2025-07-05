@@ -57,12 +57,12 @@ window.addEventListener("scroll", () => {
 });
 
 // JavaScript for the preloader
-// document.addEventListener("DOMContentLoaded", () => {
-//   const preloader = document.querySelector(".preloader");
-//   const content = document.querySelector(".content");
-//   window.addEventListener("load", () => {
-//     setTimeout(() => {
-//       preloader.classList.add("hidden");
-//     }, 500);
-//   });
-// });
+document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.querySelector(".preloader");
+  const content = document.querySelector(".content");
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      preloader.classList.add("hidden");
+    }, 500);
+  });
+});
