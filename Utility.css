@@ -95,7 +95,7 @@ body {
   width: 120px;
 }
 
-.hidden{
+.hidden {
   display: none !important;
 }
 
@@ -118,10 +118,9 @@ body {
   align-items: center;
 }
 
-section{
+section {
   padding: 5.4rem 0 !important;
 }
-
 
 .About-Us,
 .testimonials-section {
@@ -320,7 +319,6 @@ section{
 
 /* Add animation keyframes */
 
-
 @keyframes zoom-in-out {
   0% {
     transform: scale(1.1);
@@ -330,5 +328,15 @@ section{
   }
   100% {
     transform: scale(1.1);
+  }
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

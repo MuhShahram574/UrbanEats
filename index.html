@@ -1,947 +1,843 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FOR ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- FOR FAVICON -->
-    <link rel="shortcut icon" href="./img/About-us.jpg" type="image/x-icon" />
-    <title>Urban Eats | Name of Tast</title>
-    <!-- FOR GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FOR ANIMATION ON SCROLL -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- FOR CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Utility.css" />
-    <link rel="stylesheet" href="Queries.css" />
-  </head>
-  <body>
-    <!-- LOADER CODE -->
-    <div class="preloader">
+  <!-- FOR ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FOR FAVICON -->
+  <link rel="shortcut icon" href="./img/About-us.jpg" type="image/x-icon" />
+  <title>Urban Eats | Name of Tast</title>
+  <!-- FOR GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- FOR ANIMATION ON SCROLL -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- FOR CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Utility.css" />
+  <link rel="stylesheet" href="Queries.css" />
+</head>
+
+<body>
+  <!-- LOADER CODE -->
+  <!-- <div class="preloader">
       <div class="loader"></div>
+    </div> -->
+
+  <aside class="hidden">
+    <div class="cross-btn-box">
+      <i class="fa-solid fa-x"></i>
     </div>
 
-    <aside class="hidden">
-      <div class="cross-btn-box">
-        <i class="fa-solid fa-x"></i>
+    <div class="sub-navbar">
+      <ul>
+        <li><a href="#About-Us" class="nav-links-sub">About Us</a></li>
+        <li>
+          <a href="#services-container" class="nav-links-sub">Services</a>
+        </li>
+        <li><a href="#menu-section" class="nav-links-sub">Menu</a></li>
+        <li><a href="#grand-deals" class="nav-links-sub">Deals</a></li>
+        <li>
+          <a href="#cta-section" class="cta nav-links-sub">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="#heros-section">
+          <span class="urban">Urban</span><span class="eats">Eats</span>
+        </a>
       </div>
 
-      <div class="sub-navbar">
-        <ul>
-          <li><a href="#heros-section" class="nav-links-sub">Home</a></li>
-          <li><a href="#About-Us" class="nav-links-sub">About Us</a></li>
+      <!-- NavBar -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+
+          <li><a href="#About-Us" class="nav-links">About Us</a></li>
           <li>
-            <a href="#services-container" class="nav-links-sub">Services</a>
+            <a href="#services-container" class="nav-links">Services</a>
           </li>
-          <li><a href="#menu-section" class="nav-links-sub">Menu</a></li>
-          <li><a href="#grand-deals" class="nav-links-sub">Deals</a></li>
-          <li>
-            <a href="#cta-section" class="cta nav-links-sub">Contact Us</a>
-          </li>
+          <li><a href="#menu-section" class="nav-links">Menu</a></li>
+          <li><a href="#grand-deals" class="nav-links">Deals</a></li>
+          <li><a href="#cta-section" class="cta nav-links">Contact Us</a></li>
         </ul>
+      </nav>
+      <div class="mobile-nav-btn">
+        <i class="fa-solid fa-bars"></i>
       </div>
-    </aside>
-    <header>
-      <div class="header-container">
-        <div class="logo" data-aos="fade-up" data-aos-duration="1500">
-          <a href="#heros-section">
-            <span class="urban">Urban</span><span class="eats">Eats</span>
-          </a>
-        </div>
+    </div>
+  </header>
 
-        <!-- NavBar -->
-        <nav class="main-nav">
-          <ul class="nav-list" data-aos="fade-up" data-aos-duration="1500">
-            <li><a href="#heros-section" class="nav-links">Home</a></li>
-            <li><a href="#About-Us" class="nav-links">About Us</a></li>
-            <li>
-              <a href="#services-container" class="nav-links">Services</a>
-            </li>
-            <li><a href="#menu-section" class="nav-links">Menu</a></li>
-            <li><a href="#grand-deals" class="nav-links">Deals</a></li>
-            <li><a href="#cta-section" class="cta nav-links">Contact Us</a></li>
-          </ul>
-        </nav>
-        <div class="mobile-nav-btn">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <!--
+  <main>
+    <!--
      //////////////////////////
      HERO'S SECTION
      //////////////////////////
      -->
-      <section id="heros-section" class="heros-section">
-        <div class="hero container grid grid-col-2">
-          <div class="hero-content-wrapper">
-            <div class="heros-content">
-              <h1
-                class="Primary-heading"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                Freshly Baked Delights, Straight from Our Oven to Your Heart
-              </h1>
-              <p class="tagline" data-aos="fade-up" data-aos-duration="2500">
-                Freshly Baked Blisses, Just for You
-              </p>
-              <p
-                class="description"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                Discover the Best Deals and Experiences
-              </p>
-              <div
-                class="heros-btn-box"
-                data-aos="fade-up"
-                data-aos-duration="3500"
-              >
-                <a href="#menu-section" class="btn"> Explore Now </a>
-                <a href="#cta-section" class="cta"> Get Started </a>
-              </div>
+    <section id="heros-section" class="heros-section">
+      <div class="hero container">
+        <div class="hero-content-wrapper">
+          <div class="heros-content">
+            <h1 class="Primary-heading">
+              <span class="upper"> Urban Eats </span><span class="highlight"> Freshly Baked,</span> <span
+                class="lower">Perfectly Urban</span>
+            </h1>
+            <p class="description">
+              Discover the Best Deals and Experiences
+            </p>
+            <div class="heros-btn-box">
+              <a href="#menu-section" class="btn"> Explore Now </a>
+              <a href="#cta-section" class="cta"> Get Started </a>
             </div>
           </div>
-          <div class="hero-image-wrapper">
-            <img
-              src="./img/hero.jpg"
-              alt="Hero background"
-              class="hero-image"
-            />
-          </div>
         </div>
-      </section>
-      <!--
+        <div class="hero-image-wrapper">
+          <img src="./img/hero.jpg" alt="Hero background" class="hero-image" />
+        </div>
+      </div>
+    </section>
+    <!--
      //////////////////////////
      FEATURED IN SECTION
      //////////////////////////
      -->
-      <section id="featured-in-section" class="featured-in-section">
-        <div class="container featured-in-box">
-          <div class="section-heading-box">
-            <p class="sub-heading" data-aos="fade-up" data-aos-duration="500">
-              Featured in
-            </p>
-            <div
-              class="Featured-logos"
-              data-aos="fade-up"
-              data-aos-duration="500"
-            >
-              <img
-                src="./img/logo//usa-today.png"
-                alt=""
-                class="featured-logo"
-              />
-              <img
-                src="./img/logo/Mcdonals-logo.png"
-                alt=""
-                class="featured-logo"
-              />
-              <img src="./img/logo/forbes.png" alt="" class="featured-logo" />
-              <img
-                src="./img/logo/the-new-york-times.png"
-                alt=""
-                class="featured-logo"
-              />
-              <img
-                src="./img/logo/techcrunch.png"
-                alt=""
-                class="featured-logo"
-              />
-            </div>
+    <section id="featured-in-section" class="featured-in-section">
+      <div class="container featured-in-box">
+        <div class="section-heading-box">
+          <p class="sub-heading">
+            Featured in
+          </p>
+          <div class="Featured-logos">
+            <img src="./img/logo//usa-today.png" alt="" class="featured-logo" />
+            <img src="./img/logo/Mcdonals-logo.png" alt="" class="featured-logo" />
+            <img src="./img/logo/forbes.png" alt="" class="featured-logo" />
+            <img src="./img/logo/the-new-york-times.png" alt="" class="featured-logo" />
+            <img src="./img/logo/techcrunch.png" alt="" class="featured-logo" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--
+    <!--
      //////////////////////////
      ABOUT US SECTION
      //////////////////////////
      -->
-      <section class="About-Us" id="About-Us">
-        <div class="heading-box">
-          <p class="sub-heading" data-aos="fade-up" data-aos-duration="500">
-            About Us
-          </p>
-          <h2
-            class="secondary-heading"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            Our Sweet and Lovely Movements
-          </h2>
-        </div>
-        <div class="container about-container grid grid-col-2">
-          <div data-aos="zoom-in">
-            <div class="about-image-box">
-              <img
-                src="./img/About-us.jpg"
-                alt="Our bakery storefront"
-                class="about-image"
-              />
-            </div>
-          </div>
-
-          <div class="about-content">
-            <span class="sub-heading" data-aos="fade-right">Our Story</span>
-            <h3 class="tertory-heading" data-aos="fade-right">
-              Crafting Joy Since 2010
-            </h3>
-
-            <div class="about-text">
-              <p class="description" data-aos="fade-right">
-                At Urban Eats, our journey began with a simple dream: to create
-                moments of joy through the art of baking. What started as a
-                small family-owned bakery has blossomed into a beloved community
-                destination where every recipe tells a story and every bite
-                brings comfort.
-              </p>
-
-              <p class="description" data-aos="fade-right">
-                Our master bakers combine time-honored techniques with
-                innovative flavors, ensuring each creation that leaves our ovens
-                meets our exacting standards. From crusty artisan breads to
-                delicate pastries, every item is crafted with care and attention
-                to detail.
-              </p>
-            </div>
-
-            <a href="#cta-section" class="btn btn-primary" data-aos="fade-right"
-              >Learn More About Us</a
-            >
+    <section class="About-Us" id="About-Us">
+      <div class="heading-box">
+        <p class="sub-heading">
+          About Us
+        </p>
+        <h2 class="secondary-heading">
+          Our Sweet and Lovely Movements
+        </h2>
+      </div>
+      <div class="container about-container grid grid-col-2">
+        <div>
+          <div class="about-image-box">
+            <img src="./img/About-us.jpg" alt="Our bakery storefront" class="about-image" />
           </div>
         </div>
-      </section>
-      <!--
+
+        <div class="about-content">
+          <span class="sub-heading">Our Story</span>
+          <h3 class="tertory-heading">
+            Crafting Joy Since 2010
+          </h3>
+
+          <div class="about-text">
+            <p class="description">
+              At Urban Eats, our journey began with a simple dream: to create
+              moments of joy through the art of baking. What started as a
+              small family-owned bakery has blossomed into a beloved community
+              destination where every recipe tells a story and every bite
+              brings comfort.
+            </p>
+
+            <p class="description">
+              Our master bakers combine time-honored techniques with
+              innovative flavors, ensuring each creation that leaves our ovens
+              meets our exacting standards. From crusty artisan breads to
+              delicate pastries, every item is crafted with care and attention
+              to detail.
+            </p>
+          </div>
+
+          <a href="#cta-section" class="btn btn-primary">Learn More About Us</a>
+        </div>
+      </div>
+    </section>
+    <!--
      //////////////////////////
      SERVICES SECTION
      //////////////////////////
      -->
 
-      <section id="services-container" class="services">
-        <div class="heading-box">
-          <p class="sub-heading" data-aos="fade-up">Our Services</p>
-          <h2 class="secondary-heading" data-aos="fade-up">What We Offer</h2>
+    <section id="services-container" class="services">
+      <div class="heading-box">
+        <p class="sub-heading">Our Services</p>
+        <h2 class="secondary-heading">What We Offer</h2>
+      </div>
+      <div class="services-container container grid grid-col-3">
+        <div>
+          <!-- <div class="service-card"> -->
+          <div class="service-content">
+            <div class="icon-box">
+              <div class="icon">
+                <i class="fas fa-cake"></i>
+              </div>
+            </div>
+            <div class="description-box">
+              <h3 class="tertory-heading">Birthday Cakes</h3>
+              <p class="description">
+                Celebrate your special day with a custom-made birthday cake
+                that reflects your personality and style. Choose from a
+                variety of flavors, designs, and sizes to make your birthday
+                unforgettable.
+              </p>
+            </div>
+            <div class="btn-box">
+              <a href="#cta-section" class="btn">Learn More</a>
+            </div>
+            <!-- </div> -->
+          </div>
         </div>
-        <div class="services-container container grid grid-col-3">
-          <div data-aos="zoom-in">
-            <!-- <div class="service-card"> -->
-            <div class="service-content">
-              <div class="icon-box">
-                <div class="icon">
-                  <i class="fas fa-cake"></i>
-                </div>
-              </div>
-              <div class="description-box">
-                <h3 class="tertory-heading">Birthday Cakes</h3>
-                <p class="description">
-                  Celebrate your special day with a custom-made birthday cake
-                  that reflects your personality and style. Choose from a
-                  variety of flavors, designs, and sizes to make your birthday
-                  unforgettable.
-                </p>
-              </div>
-              <div class="btn-box">
-                <a href="#cta-section" class="btn">Learn More</a>
-              </div>
-              <!-- </div> -->
-            </div>
-          </div>
-          <div data-aos="zoom-in">
-            <!-- <div class="service-card"> -->
-            <div class="service-content">
-              <div class="icon-box">
-                <div class="icon">
-                  <i class="fa-solid fa-gift"></i>
-                </div>
-              </div>
-              <div class="description-box">
-                <h3 class="tertory-heading">Wedding Cakes</h3>
-                <p class="description">
-                  Make your wedding day even more magical with a stunning
-                  wedding cake crafted to perfection. Our experienced bakers
-                  will work with you to create a cake that complements your
-                  wedding theme and delights your guests.
-                </p>
-              </div>
-              <div class="btn-box">
-                <a href="#cta-section" class="btn">Learn More</a>
+        <div>
+          <!-- <div class="service-card"> -->
+          <div class="service-content">
+            <div class="icon-box">
+              <div class="icon">
+                <i class="fa-solid fa-gift"></i>
               </div>
             </div>
-            <!-- </div> -->
-          </div>
-          <div data-aos="zoom-in">
-            <!-- <div class="service-card"> -->
-            <div class="service-content">
-              <div class="icon-box">
-                <div class="icon">
-                  <i class="fas fa-wrench"></i>
-                </div>
-              </div>
-              <div class="description-box">
-                <h3 class="tertory-heading">Custom Orders</h3>
-                <p class="description">
-                  Have a unique idea in mind? We specialize in custom cake
-                  designs for any occasion. From intricate details to
-                  personalized messages, we'll bring your vision to life.
-                </p>
-              </div>
-              <div class="btn-box">
-                <a href="#cta-section" class="btn">Learn More</a>
-              </div>
+            <div class="description-box">
+              <h3 class="tertory-heading">Wedding Cakes</h3>
+              <p class="description">
+                Make your wedding day even more magical with a stunning
+                wedding cake crafted to perfection. Our experienced bakers
+                will work with you to create a cake that complements your
+                wedding theme and delights your guests.
+              </p>
             </div>
-          </div>
-          <!-- </div> -->
-          <div data-aos="zoom-in">
-            <!-- <div class="service-card"> -->
-            <div class="service-content">
-              <div class="icon-box">
-                <div class="icon">
-                  <i class="fas fa-utensils"></i>
-                </div>
-              </div>
-              <div class="description-box">
-                <h3 class="tertory-heading">Catering</h3>
-                <p class="description">
-                  Let us take care of the desserts for your next event. Our
-                  catering service provides a selection of delicious cakes,
-                  pastries, and sweets that will impress your guests and satisfy
-                  their sweet tooth.
-                </p>
-              </div>
-              <div class="btn-box">
-                <a href="#cta-section" class="btn">Learn More</a>
-              </div>
-            </div>
-            <!-- </div> -->
-          </div>
-          <div data-aos="zoom-in">
-            <!-- <div class="service-card"> -->
-            <div class="service-content">
-              <div class="icon-box">
-                <div class="icon">
-                  <i class="fa-solid fa-truck"></i>
-                </div>
-              </div>
-              <div class="description-box">
-                <h3 class="tertory-heading">Delivery</h3>
-                <p class="description">
-                  Enjoy the convenience of having your cake delivered right to
-                  your doorstep. We offer reliable delivery services to ensure
-                  your cake arrives fresh and on time for your celebration.
-                </p>
-              </div>
-              <div class="btn-box">
-                <a href="#cta-section" class="btn">Learn More</a>
-              </div>
+            <div class="btn-box">
+              <a href="#cta-section" class="btn">Learn More</a>
             </div>
           </div>
           <!-- </div> -->
         </div>
-      </section>
-      <!--
+        <div>
+          <!-- <div class="service-card"> -->
+          <div class="service-content">
+            <div class="icon-box">
+              <div class="icon">
+                <i class="fas fa-wrench"></i>
+              </div>
+            </div>
+            <div class="description-box">
+              <h3 class="tertory-heading">Custom Orders</h3>
+              <p class="description">
+                Have a unique idea in mind? We specialize in custom cake
+                designs for any occasion. From intricate details to
+                personalized messages, we'll bring your vision to life.
+              </p>
+            </div>
+            <div class="btn-box">
+              <a href="#cta-section" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <div>
+          <!-- <div class="service-card"> -->
+          <div class="service-content">
+            <div class="icon-box">
+              <div class="icon">
+                <i class="fas fa-utensils"></i>
+              </div>
+            </div>
+            <div class="description-box">
+              <h3 class="tertory-heading">Catering</h3>
+              <p class="description">
+                Let us take care of the desserts for your next event. Our
+                catering service provides a selection of delicious cakes,
+                pastries, and sweets that will impress your guests and satisfy
+                their sweet tooth.
+              </p>
+            </div>
+            <div class="btn-box">
+              <a href="#cta-section" class="btn">Learn More</a>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div>
+          <!-- <div class="service-card"> -->
+          <div class="service-content">
+            <div class="icon-box">
+              <div class="icon">
+                <i class="fa-solid fa-truck"></i>
+              </div>
+            </div>
+            <div class="description-box">
+              <h3 class="tertory-heading">Delivery</h3>
+              <p class="description">
+                Enjoy the convenience of having your cake delivered right to
+                your doorstep. We offer reliable delivery services to ensure
+                your cake arrives fresh and on time for your celebration.
+              </p>
+            </div>
+            <div class="btn-box">
+              <a href="#cta-section" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+    <!--
      //////////////////////////
      VISIT US SECTION
      //////////////////////////
      -->
-      <section id="visit-us" class="visit-us">
-        <div class="container">
-          <div class="heading-box">
-            <p class="sub-heading" data-aos="fade-up">visit us</p>
-            <h2 class="secondary-heading" data-aos="fade-up">
-              Where Every On Visit Feels Like Home.
-            </h2>
-          </div>
+    <section id="visit-us" class="visit-us">
+      <div class="container">
+        <div class="heading-box">
+          <p class="sub-heading">visit us</p>
+          <h2 class="secondary-heading">
+            Where Every On Visit Feels Like Home.
+          </h2>
+        </div>
 
-          <div class="cards-container grid grid-col-2">
-            <!-- Regular Hours Card -->
-            <div data-aos="zoom-in">
-              <div class="card">
-                <h3 class="tertory-heading">Regular Days</h3>
-                <div class="list hours-list">
-                  <div class="day">
-                    <span class="day-name">Monday – Friday</span>
-                    <span class="time">8:00 AM – 10:00 PM</span>
-                  </div>
-                  <div class="day">
-                    <span class="day-name">Saturday</span>
-                    <span class="time">9:00 AM – 11:00 PM</span>
-                  </div>
-                  <div class="day">
-                    <span class="day-name">Sunday</span>
-                    <span class="time">9:00 AM – 9:00 PM</span>
-                  </div>
+        <div class="cards-container grid grid-col-2">
+          <!-- Regular Hours Card -->
+          <div>
+            <div class="card">
+              <h3 class="tertory-heading">Regular Days</h3>
+              <div class="list hours-list">
+                <div class="day">
+                  <span class="day-name">Monday – Friday</span>
+                  <span class="time">8:00 AM – 10:00 PM</span>
                 </div>
-                <div class="decorative-note">
-                  <p>“Baking is our way of sharing joy—see you soon!”</p>
+                <div class="day">
+                  <span class="day-name">Saturday</span>
+                  <span class="time">9:00 AM – 11:00 PM</span>
                 </div>
-                <div class="cta">
-                  <a href="#cta-section" class="btn">Contact Us</a>
+                <div class="day">
+                  <span class="day-name">Sunday</span>
+                  <span class="time">9:00 AM – 9:00 PM</span>
                 </div>
               </div>
+              <div class="decorative-note">
+                <p>“Baking is our way of sharing joy—see you soon!”</p>
+              </div>
+              <div class="cta">
+                <a href="#cta-section" class="btn">Contact Us</a>
+              </div>
             </div>
+          </div>
 
-            <!-- Special Hours Card -->
-            <div data-aos="zoom-in">
-              <div class="card">
-                <h3 class="tertory-heading">Special Days</h3>
-                <div class="list special-list">
-                  <div class="day">
-                    <span class="day-name">Eid Fitr</span>
-                    <span class="time">7:00 AM – 11:00 PM</span>
-                  </div>
-                  <div class="day">
-                    <span class="day-name">Eid Al-Adha</span>
-                    <span class="time">8:00 AM – 10:00 PM</span>
-                  </div>
-                  <div class="day">
-                    <span class="day-name">Eid Mulid al-Nabi</span>
-                    <span class="time">8:00 AM – 10:00 PM</span>
-                  </div>
+          <!-- Special Hours Card -->
+          <div>
+            <div class="card">
+              <h3 class="tertory-heading">Special Days</h3>
+              <div class="list special-list">
+                <div class="day">
+                  <span class="day-name">Eid Fitr</span>
+                  <span class="time">7:00 AM – 11:00 PM</span>
                 </div>
+                <div class="day">
+                  <span class="day-name">Eid Al-Adha</span>
+                  <span class="time">8:00 AM – 10:00 PM</span>
+                </div>
+                <div class="day">
+                  <span class="day-name">Eid Mulid al-Nabi</span>
+                  <span class="time">8:00 AM – 10:00 PM</span>
+                </div>
+              </div>
 
-                <div class="decorative-note">
-                  <p>“Baking is our way of sharing joy—see you soon!”</p>
-                </div>
-                <div class="cta">
-                  <a href="#cta-section" class="btn">Contact Us</a>
-                </div>
+              <div class="decorative-note">
+                <p>“Baking is our way of sharing joy—see you soon!”</p>
+              </div>
+              <div class="cta">
+                <a href="#cta-section" class="btn">Contact Us</a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--
+    <!--
      //////////////////////////
      MENU SECTION
      //////////////////////////
      -->
-      <section class="menu-section" id="menu-section">
-        <div class="container menu-container">
-          <div class="heading-box">
-            <p class="sub-heading" data-aos="fade-up">Menu</p>
-            <h2 class="secondary-heading" data-aos="fade-up">
-              Made with Love, Served with Flavor
-            </h2>
+    <section class="menu-section" id="menu-section">
+      <div class="container menu-container">
+        <div class="heading-box">
+          <p class="sub-heading">Menu</p>
+          <h2 class="secondary-heading">
+            Made with Love, Served with Flavor
+          </h2>
+        </div>
+
+        <div class="menus grid grid-col-3">
+          <div>
+            <div class="item">
+              <img src="./img/menu/menu -item (6).jpg" alt="menu-1" />
+              <div class="item-description">
+                <p class="sub-heading">Cookies</p>
+                <p class="description">
+                  Cookies are sweet, small baked treats.
+                </p>
+                <p class="price">$40</p>
+                <a href="#cta-section" class="btn">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="item">
+              <img src="./img/menu/menu -item (5).jpg" alt="menu-2" />
+              <div class="item-description">
+                <p class="sub-heading">chocolates</p>
+                <p class="description">
+                  Cookies are sweet, small baked treats.
+                </p>
+                <p class="price">$55</p>
+                <a href="#cta-section" class="btn">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="item">
+              <img src="./img/menu/menu -item (4).jpg" alt="menu-3" />
+              <div class="item-description">
+                <p class="sub-heading">Doughnuts</p>
+                <p class="description">
+                  Doughnuts are sweet, ring-shaped pastries, typically fried,
+                  often glazed or filled.
+                </p>
+                <p class="price">$35</p>
+                <a href="#cta-section" class="btn">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="item">
+              <img src="./img/menu/menu -item (3).jpg" alt="menu-4" />
+              <div class="item-description">
+                <p class="sub-heading">Pastries</p>
+                <p class="description">
+                  Pastries are baked goods made from dough, often sweet,
+                  flaky, or buttery.
+                </p>
+                <p class="price">$25</p>
+                <a href="#cta-section" class="btn">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="item">
+              <img src="./img/menu/menu -item (2).jpg" alt="menu-5" />
+              <div class="item-description">
+                <p class="sub-heading">Cup Iec-Cream</p>
+                <p class="description">
+                  Cup ice-cream rich, creamy dessert served in small cups.
+                </p>
+                <p class="price">$75</p>
+                <a href="#cta-section" class="btn">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="item">
+              <img src="./img/menu/menu -item (1).jpg" alt="menu-1" />
+              <div class="item-description">
+                <p class="sub-heading">Cake</p>
+                <p class="description">
+                  A moist, flavorful dessert baked in various shapes.
+                </p>
+                <p class="price">$65</p>
+                <a href="#cta-section" class="btn">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ////////////////////////// -->
+    <!-- TESTIMONIAL SECTION -->
+    <!-- ////////////////////////// -->
+    <section class="testimonials-section" id="testimonials-section">
+      <div class="container">
+        <div class="heading-box">
+          <p class="sub-heading">What Our Customers Say</p>
+          <h2 class="secondary-heading">
+            Real Stories from Real Customers
+          </h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial Card 1 -->
+          <div>
+            <div class="testimonial-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <blockquote class="testimonial-text">
+                "The service was impeccable and the food was out of this
+                world! I've never had such an amazing dining experience."
+              </blockquote>
+              <div class="testimonial-author">
+                <img src="./img/testimonial-persons/testimonial-person-img (1).jpg" alt="Sarah Ahmed"
+                  class="author-image" />
+                <div class="author-info">
+                  <h4 class="author-name">Sarah Ahmed</h4>
+                  <p class="author-title">Food Critic</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="menus grid grid-col-3">
-            <div data-aos="zoom-in">
-              <div class="item">
-                <img src="./img/menu/menu -item (6).jpg" alt="menu-1" />
-                <div class="item-description">
-                  <p class="sub-heading">Cookies</p>
-                  <p class="description">
-                    Cookies are sweet, small baked treats.
-                  </p>
-                  <p class="price">$40</p>
-                  <a href="#cta-section" class="btn">Get Started</a>
+          <!-- Testimonial Card 2 -->
+
+          <div>
+            <div class="testimonial-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <blockquote class="testimonial-text">
+                "Every dish is crafted with love and attention to detail. This
+                place has become our family's favorite restaurant."
+              </blockquote>
+              <div class="testimonial-author">
+                <img src="./img/testimonial-persons/testimonial-person-img (2).jpg" alt="Fatima Malik"
+                  class="author-image" />
+                <div class="author-info">
+                  <h4 class="author-name">Fatima Malik</h4>
+                  <p class="author-title">Regular Customer</p>
                 </div>
               </div>
             </div>
-            <div data-aos="zoom-in">
-              <div class="item">
-                <img src="./img/menu/menu -item (5).jpg" alt="menu-2" />
-                <div class="item-description">
-                  <p class="sub-heading">chocolates</p>
-                  <p class="description">
-                    Cookies are sweet, small baked treats.
-                  </p>
-                  <p class="price">$55</p>
-                  <a href="#cta-section" class="btn">Get Started</a>
-                </div>
-              </div>
-            </div>
-            <div data-aos="zoom-in">
-              <div class="item">
-                <img src="./img/menu/menu -item (4).jpg" alt="menu-3" />
-                <div class="item-description">
-                  <p class="sub-heading">Doughnuts</p>
-                  <p class="description">
-                    Doughnuts are sweet, ring-shaped pastries, typically fried,
-                    often glazed or filled.
-                  </p>
-                  <p class="price">$35</p>
-                  <a href="#cta-section" class="btn">Get Started</a>
-                </div>
-              </div>
-            </div>
-            <div data-aos="zoom-in">
-              <div class="item">
-                <img src="./img/menu/menu -item (3).jpg" alt="menu-4" />
-                <div class="item-description">
-                  <p class="sub-heading">Pastries</p>
-                  <p class="description">
-                    Pastries are baked goods made from dough, often sweet,
-                    flaky, or buttery.
-                  </p>
-                  <p class="price">$25</p>
-                  <a href="#cta-section" class="btn">Get Started</a>
-                </div>
-              </div>
-            </div>
-            <div data-aos="zoom-in">
-              <div class="item">
-                <img src="./img/menu/menu -item (2).jpg" alt="menu-5" />
-                <div class="item-description">
-                  <p class="sub-heading">Cup Iec-Cream</p>
-                  <p class="description">
-                    Cup ice-cream rich, creamy dessert served in small cups.
-                  </p>
-                  <p class="price">$75</p>
-                  <a href="#cta-section" class="btn">Get Started</a>
-                </div>
-              </div>
-            </div>
-            <div data-aos="zoom-in">
-              <div class="item">
-                <img src="./img/menu/menu -item (1).jpg" alt="menu-1" />
-                <div class="item-description">
-                  <p class="sub-heading">Cake</p>
-                  <p class="description">
-                    A moist, flavorful dessert baked in various shapes.
-                  </p>
-                  <p class="price">$65</p>
-                  <a href="#cta-section" class="btn">Get Started</a>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div>
+            <div class="testimonial-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <blockquote class="testimonial-text">
+                "The ambiance, the service, and most importantly, the food -
+                everything is consistently excellent!"
+              </blockquote>
+              <div class="testimonial-author">
+                <img src="./img/testimonial-persons/testimonial-person-img (3).jpg" alt="Ali Khan"
+                  class="author-image" />
+                <div class="author-info">
+                  <h4 class="author-name">Ali Khan</h4>
+                  <p class="author-title">Food Blogger</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- ////////////////////////// -->
-      <!-- TESTIMONIAL SECTION -->
-      <!-- ////////////////////////// -->
-      <section class="testimonials-section" id="testimonials-section">
-        <div class="container">
-          <div class="heading-box">
-            <p class="sub-heading" data-aos="fade-up">What Our Customers Say</p>
-            <h2 class="secondary-heading" data-aos="fade-up">
-              Real Stories from Real Customers
-            </h2>
-          </div>
-
-          <div class="testimonials-grid">
-            <!-- Testimonial Card 1 -->
-            <div data-aos="zoom-in">
-              <div class="testimonial-card">
-                <i class="fa-solid fa-quote-left quote-icon"></i>
-                <blockquote class="testimonial-text">
-                  "The service was impeccable and the food was out of this
-                  world! I've never had such an amazing dining experience."
-                </blockquote>
-                <div class="testimonial-author">
-                  <img
-                    src="./img/testimonial-persons/testimonial-person-img (1).jpg"
-                    alt="Sarah Ahmed"
-                    class="author-image"
-                  />
-                  <div class="author-info">
-                    <h4 class="author-name">Sarah Ahmed</h4>
-                    <p class="author-title">Food Critic</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial Card 2 -->
-
-            <div data-aos="zoom-in">
-              <div class="testimonial-card">
-                <i class="fa-solid fa-quote-left quote-icon"></i>
-                <blockquote class="testimonial-text">
-                  "Every dish is crafted with love and attention to detail. This
-                  place has become our family's favorite restaurant."
-                </blockquote>
-                <div class="testimonial-author">
-                  <img
-                    src="./img/testimonial-persons/testimonial-person-img (2).jpg"
-                    alt="Fatima Malik"
-                    class="author-image"
-                  />
-                  <div class="author-info">
-                    <h4 class="author-name">Fatima Malik</h4>
-                    <p class="author-title">Regular Customer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial Card 3 -->
-            <div data-aos="zoom-in">
-              <div class="testimonial-card">
-                <i class="fa-solid fa-quote-left quote-icon"></i>
-                <blockquote class="testimonial-text">
-                  "The ambiance, the service, and most importantly, the food -
-                  everything is consistently excellent!"
-                </blockquote>
-                <div class="testimonial-author">
-                  <img
-                    src="./img/testimonial-persons/testimonial-person-img (3).jpg"
-                    alt="Ali Khan"
-                    class="author-image"
-                  />
-                  <div class="author-info">
-                    <h4 class="author-name">Ali Khan</h4>
-                    <p class="author-title">Food Blogger</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--
+      </div>
+    </section>
+    <!--
      //////////////////////////
      Grand deals SECTION
      //////////////////////////
     -->
 
-      <!--Grand Deals Section -->
-      <section class="grand-deals" id="grand-deals">
-        <div class="container">
-          <div class="heading-box">
-            <p class="sub-heading" data-aos="fade-up">Sweet Savings</p>
-            <h2 class="secondary-heading" data-aos="fade-up">Grand Deals</h2>
-            <p class="description" data-aos="fade-up">
-              Indulge in our special offers and treat yourself to something
-              extraordinary
-            </p>
-          </div>
-
-          <div class="deals-grid grid grid-col-3">
-            <!-- Deal Card 1 -->
-            <div data-aos="zoom-in">
-              <div class="deal-card">
-                <div class="deal-image">
-                  <img
-                    src="./img/Grands-deals/deals (1).jpg"
-                    alt="Pastry Bundle Deal"
-                  />
-                  <span class="discount-badge">-30%</span>
-                </div>
-                <div class="deal-content">
-                  <h3 class="deal-title">Sweet Bundle Deal</h3>
-                  <p class="deal-description">
-                    6 delightful cupcakes of our finest pastries, perfect for
-                    sharing
-                  </p>
-                  <div class="price-container">
-                    <span class="original-price">$45.99</span>
-                    <span class="discounted-price">$32.19</span>
-                  </div>
-                  <a href="#cta-section" class="deal-btn">Shop Now</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Deal Card 2 -->
-            <div data-aos="zoom-in">
-              <div class="deal-card">
-                <div class="deal-image">
-                  <img
-                    src="./img/Grands-deals/deals (3).jpg"
-                    alt="Celebration Cake Special"
-                  />
-                  <span class="discount-badge">-25%</span>
-                </div>
-                <div class="deal-content">
-                  <h3 class="deal-title">Celebration Cake</h3>
-                  <p class="deal-description">
-                    3 delightful Cream Cake of our finest cakes, perfect for
-                    sharing
-                  </p>
-                  <div class="price-container">
-                    <span class="original-price">$89.99</span>
-                    <span class="discounted-price">$67.49</span>
-                  </div>
-                  <a href="#cta-section" class="deal-btn">Shop Now</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Deal Card 3 -->
-            <div data-aos="zoom-in">
-              <div class="deal-card">
-                <div class="deal-image">
-                  <img
-                    src="./img/Grands-deals/deals (2).jpg"
-                    alt="Artisan Bread Basket"
-                  />
-                  <span class="discount-badge">-20%</span>
-                </div>
-                <div class="deal-content">
-                  <h3 class="deal-title">Artisan Bread Basket</h3>
-                  <p class="deal-description">
-                    Enjoy a basket of 10 freshly baked artisan breads, perfect
-                    for any meal.
-                  </p>
-                  <div class="price-container">
-                    <span class="original-price">$35.99</span>
-                    <span class="discounted-price">$28.79</span>
-                  </div>
-                  <a href="#cta-section" class="deal-btn">Shop Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- //////////////////////////  -->
-      <!-- CTA SECTION -->
-      <!-- ////////////////////////// -->
-      <section class="cta-section" id="cta-section">
-        <div class="cta-grid container grid grid-col-2 v-center">
-          <!-- Contact Form Side -->
-          <div class="contact-form" data-aos="zoom-in">
-            <form action="" class="contact-form-box">
-              <input
-                type="text"
-                placeholder="Your Name"
-                name="name"
-                autocomplete="off"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                name="email"
-                autocomplete="off"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Product"
-                name="subject"
-                autocomplete="off"
-                required
-              />
-              <textarea
-                placeholder="Your Message"
-                rows="7"
-                cols="10"
-                name="message"
-                autocomplete="off"
-                required
-              ></textarea>
-              <button type="submit" class="send-message-btn">
-                Send Message
-              </button>
-            </form>
-          </div>
-
-          <!-- Contact Info Side -->
-          <div class="contact-info">
-            <h2 data-aos="fade-right">Let's Connect</h2>
-            <p class="contact-desc" data-aos="fade-right">
-              Feel free to reach out for collaborations, questions, or just a
-              friendly chat about food and dining!
-            </p>
-
-            <div class="contact-details">
-              <div class="contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <div class="contact-text">
-                  <h3 data-aos="fade-right">Email</h3>
-                  <p data-aos="fade-right">contact@urbaneats.com</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <div class="contact-text">
-                  <h3 data-aos="fade-right">Phone</h3>
-                  <p data-aos="fade-right">+92 123-4567890</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <div class="contact-text">
-                  <h3 data-aos="fade-right">Location</h3>
-                  <p data-aos="fade-right">Gujrat, Pakistan</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="social-links">
-              <div data-aos="zoom-in">
-                <a href="#" class="social-link">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-              <div data-aos="zoom-in">
-                <a href="#" class="social-link">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
-              <div data-aos="zoom-in">
-                <a href="#" class="social-link">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ////////////////////////// -->
-    <!-- FOOTER SECTION -->
-    <!-- ////////////////////////// -->
-    <footer id="footer-section" class="footer-section">
-      <div class="footer container grid">
-        <div class="box1">
-          <div class="logo">
-            <a href="#heros-section" data-aos="fade-right">
-              <span class="urban">Urban</span><span class="eats">Eats</span>
-            </a>
-          </div>
-          <p class="description" data-aos="fade-right">
-            Crafting moments of joy through the art of baking since 2010. Every
-            bite tells our story of passion and dedication.
+    <!--Grand Deals Section -->
+    <section class="grand-deals" id="grand-deals">
+      <div class="container">
+        <div class="heading-box">
+          <p class="sub-heading">Sweet Savings</p>
+          <h2 class="secondary-heading">Grand Deals</h2>
+          <p class="description">
+            Indulge in our special offers and treat yourself to something
+            extraordinary
           </p>
-          <div class="footer-icons">
-            <div data-aos="zoom-in">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            </div>
-            <div data-aos="zoom-in">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <div data-aos="zoom-in">
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            <div data-aos="zoom-in">
-              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+
+        <div class="deals-grid grid grid-col-3">
+          <!-- Deal Card 1 -->
+          <div>
+            <div class="deal-card">
+              <div class="deal-image">
+                <img src="./img/Grands-deals/deals (1).jpg" alt="Pastry Bundle Deal" />
+                <span class="discount-badge">-30%</span>
+              </div>
+              <div class="deal-content">
+                <h3 class="deal-title">Sweet Bundle Deal</h3>
+                <p class="deal-description">
+                  6 delightful cupcakes of our finest pastries, perfect for
+                  sharing
+                </p>
+                <div class="price-container">
+                  <span class="original-price">$45.99</span>
+                  <span class="discounted-price">$32.19</span>
+                </div>
+                <a href="#cta-section" class="deal-btn">Shop Now</a>
+              </div>
             </div>
           </div>
-          <div class="contact">
-            <p data-aos="fade-right" data-aos-delay="100">
-              <i class="fa-solid fa-location-dot"></i>
-              Urban Eats, Jhelum, Pakistan
-            </p>
-            <p data-aos="fade-right" data-aos-delay="100">
-              <i class="fa-solid fa-phone"></i>
-              +92 123-4567890
-            </p>
-            <p data-aos="fade-right" data-aos-delay="100">
+
+          <!-- Deal Card 2 -->
+          <div>
+            <div class="deal-card">
+              <div class="deal-image">
+                <img src="./img/Grands-deals/deals (3).jpg" alt="Celebration Cake Special" />
+                <span class="discount-badge">-25%</span>
+              </div>
+              <div class="deal-content">
+                <h3 class="deal-title">Celebration Cake</h3>
+                <p class="deal-description">
+                  3 delightful Cream Cake of our finest cakes, perfect for
+                  sharing
+                </p>
+                <div class="price-container">
+                  <span class="original-price">$89.99</span>
+                  <span class="discounted-price">$67.49</span>
+                </div>
+                <a href="#cta-section" class="deal-btn">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deal Card 3 -->
+          <div>
+            <div class="deal-card">
+              <div class="deal-image">
+                <img src="./img/Grands-deals/deals (2).jpg" alt="Artisan Bread Basket" />
+                <span class="discount-badge">-20%</span>
+              </div>
+              <div class="deal-content">
+                <h3 class="deal-title">Artisan Bread Basket</h3>
+                <p class="deal-description">
+                  Enjoy a basket of 10 freshly baked artisan breads, perfect
+                  for any meal.
+                </p>
+                <div class="price-container">
+                  <span class="original-price">$35.99</span>
+                  <span class="discounted-price">$28.79</span>
+                </div>
+                <a href="#cta-section" class="deal-btn">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////  -->
+    <!-- CTA SECTION -->
+    <!-- ////////////////////////// -->
+    <section class="cta-section" id="cta-section">
+      <div class="cta-grid container grid grid-col-2 v-center">
+        <!-- Contact Form Side -->
+        <div class="contact-form">
+          <form action="" class="contact-form-box">
+            <input type="text" placeholder="Your Name" name="name" autocomplete="off" required />
+            <input type="email" placeholder="Your Email" name="email" autocomplete="off" required />
+            <input type="text" placeholder="Product" name="subject" autocomplete="off" required />
+            <textarea placeholder="Your Message" rows="7" cols="10" name="message" autocomplete="off"
+              required></textarea>
+            <button type="submit" class="send-message-btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info Side -->
+        <div class="contact-info">
+          <h2>Let's Connect</h2>
+          <p class="contact-desc">
+            Feel free to reach out for collaborations, questions, or just a
+            friendly chat about food and dining!
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
               <i class="fa-solid fa-envelope"></i>
-              info@urbaneats.com
-            </p>
-          </div>
-        </div>
+              <div class="contact-text">
+                <h3>Email</h3>
+                <p>contact@urbaneats.com</p>
+              </div>
+            </div>
 
-        <div class="social-links-box grid grid-col-3">
-          <div class="social-links">
-            <p class="footer-heading" data-aos="fade-up">Quick Links</p>
-            <ul>
-              <li><a href="#heros-section" data-aos="fade-right">Home</a></li>
-              <li><a href="#About-Us" data-aos="fade-right">About Us</a></li>
-              <li>
-                <a href="#services-container" data-aos="fade-right"
-                  >Our Srevices
-                </a>
-              </li>
-              <li>
-                <a href="#menu-section" data-aos="fade-right">Our Menu</a>
-              </li>
-              <li>
-                <a href="#grand-deals" data-aos="fade-right">Special Deals</a>
-              </li>
-              <li>
-                <a href="#cta-section" data-aos="fade-right">Contact Us</a>
-              </li>
-            </ul>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div class="contact-text">
+                <h3>Phone</h3>
+                <p>+92 123-4567890</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="contact-text">
+                <h3>Location</h3>
+                <p>Gujrat, Pakistan</p>
+              </div>
+            </div>
           </div>
 
           <div class="social-links">
-            <p class="footer-heading" data-aos="fade-up">Our Services</p>
-            <ul>
-              <li>
-                <a href="#services-container" data-aos="fade-right"
-                  >Birthday Cakes</a
-                >
-              </li>
-              <li>
-                <a href="#services-container" data-aos="fade-right"
-                  >Wedding Cakes</a
-                >
-              </li>
-              <li>
-                <a href="#services-container" data-aos="fade-right"
-                  >Custom Orders</a
-                >
-              </li>
-              <li>
-                <a href="#services-container" data-aos="fade-right">Catering</a>
-              </li>
-              <li>
-                <a href="#services-container" data-aos="fade-right">Delivery</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="social-links">
-            <p class="footer-heading" data-aos="fade-up">Opening Hours</p>
-            <ul>
-              <li>
-                <a href="#visit-us" data-aos="fade-right"
-                  >Monday - Friday: 8am - 10pm</a
-                >
-              </li>
-              <li>
-                <a href="#visit-us" data-aos="fade-right"
-                  >Saturday: 9am - 11pm</a
-                >
-              </li>
-              <li>
-                <a href="#visit-us" data-aos="fade-right">Sunday: 9am - 9pm</a>
-              </li>
-            </ul>
+            <div>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="copyright">
-        <p>
-          &copy; 2030 URBAN EATS. All rights reserved. Designed with
-          <i class="fa-solid fa-heart"></i> by
-          <a href="#">Muhammad Shahram</a>
+  <!-- ////////////////////////// -->
+  <!-- FOOTER SECTION -->
+  <!-- ////////////////////////// -->
+  <footer id="footer-section" class="footer-section">
+    <div class="footer container grid">
+      <div class="box1">
+        <div class="logo">
+          <a href="#heros-section">
+            <span class="urban">Urban</span><span class="eats">Eats</span>
+          </a>
+        </div>
+        <p class="description">
+          Crafting moments of joy through the art of baking since 2010. Every
+          bite tells our story of passion and dedication.
         </p>
+        <div class="footer-icons">
+          <div>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="contact">
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Urban Eats, Jhelum, Pakistan
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            +92 123-4567890
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            info@urbaneats.com
+          </p>
+        </div>
       </div>
-    </footer>
 
-    <script src="script.js"></script>
-    <!-- FOR ANIMATION ON SCROLL -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 50,
-        duration: 500,
-        easing: "ease-in-out",
-        delay: 50,
-        once: false,
-      });
-    </script>
-  </body>
+      <div class="social-links-box grid grid-col-3">
+        <div class="social-links">
+          <p class="footer-heading">Quick Links</p>
+          <ul>
+            <li><a href="#heros-section">Home</a></li>
+            <li><a href="#About-Us">About Us</a></li>
+            <li>
+              <a href="#services-container">Our Srevices
+              </a>
+            </li>
+            <li>
+              <a href="#menu-section">Our Menu</a>
+            </li>
+            <li>
+              <a href="#grand-deals">Special Deals</a>
+            </li>
+            <li>
+              <a href="#cta-section">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-links">
+          <p class="footer-heading">Our Services</p>
+          <ul>
+            <li>
+              <a href="#services-container">Birthday Cakes</a>
+            </li>
+            <li>
+              <a href="#services-container">Wedding Cakes</a>
+            </li>
+            <li>
+              <a href="#services-container">Custom Orders</a>
+            </li>
+            <li>
+              <a href="#services-container">Catering</a>
+            </li>
+            <li>
+              <a href="#services-container">Delivery</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-links">
+          <p class="footer-heading">Opening Hours</p>
+          <ul>
+            <li>
+              <a href="#visit-us">Monday - Friday: 8am - 10pm</a>
+            </li>
+            <li>
+              <a href="#visit-us">Saturday: 9am - 11pm</a>
+            </li>
+            <li>
+              <a href="#visit-us">Sunday: 9am - 9pm</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>
+        &copy; 2030 URBAN EATS. All rights reserved. Designed with
+        <i class="fa-solid fa-heart"></i> by
+        <a href="#">Muhammad Shahram</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- FOR ANIMATION ON SCROLL -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 50,
+      duration: 500,
+      easing: "ease-in-out",
+      delay: 50,
+      once: false,
+    });
+  </script>
+</body>
+
 </html>
