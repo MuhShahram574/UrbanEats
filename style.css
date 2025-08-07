@@ -252,6 +252,9 @@ aside {
 
 }
 
+.upper{
+  color: #d35400;
+}
 .upper,
 .lower {
   font-size: 4rem;
